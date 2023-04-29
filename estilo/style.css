@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Oswald', sans-serif;
+    --fonte3: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+header > h1{
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    font-size: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    line-height: 2em;
+    padding-left: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.normal{
+    background-color: white; 
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    padding: 5px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425);
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 5px;
+    margin: 30px;
+    text-shadow: 2px 2px 0px black;
+
+}
+section > p{
+    padding-bottom: 2em;
+
+}
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center right;
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center right;
+}
+footer{
+    font-size: 0.9em;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+}
+footer  a{
+    text-decoration: none;
+    color: black;
+}
